@@ -1,0 +1,30 @@
+.container{
+    overflow: hidden
+}
+.tab{
+    float: left;
+}
+.tab-2{
+    margin-left: 250px;
+    border: 1px solid black;
+    background-color: bisque;
+}
+.tab-1{
+    background-color: bisque;
+}
+.tab-2 input{
+    display: block;
+    margin-bottom: 10px;
+}
+tr{
+    transition:all .25s ease-in-out
+}
+tr:hover{
+    background-color:#EEE;
+    cursor: pointer
+}
+.dtl{
+    margin-left: 240px;
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

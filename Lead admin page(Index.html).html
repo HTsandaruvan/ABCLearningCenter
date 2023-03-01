@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Data </title>
+        <style>
+            .cap{
+                text-align: center;
+                color: rgb(246, 250, 246);
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 30px;
+            }
+            html, body{
+                padding: 5px;
+                background-image:url(cool-background.png) ;
+                background-position: center;
+                background-size: cover;
+                opacity: 0.99;
+                background-repeat: no-repeat;
+                margin:0px;
+                font-family: 'Karla', sans-serif;
+                width:100%;
+                height: 100%;
+            } 
+            .container{
+                overflow: hidden
+            }
+            
+            tr{
+                transition:all .25s ease-in-out
+            }
+            tr:hover{
+                background-color:rgb(224, 167, 167);
+                cursor: pointer
+            }
+            th{
+                background-color: rgb(214, 171, 0);
+            }
+            .delete{
+                background-color: rgb(239, 50, 88);
+            }
+            
+        </style>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <h2 class="cap"><strong><u>Student Details</u></strong></h2>
+        <div id="wrapper">
+            <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Birthday</th>
+                    <th>Phone Number</th>
+                    <th>Selected Courses</th>
+                </tr>
+
+                <tr id="row1">
+                    <td id="fname_row1">Harsha</td>
+                    <td id="lname_row1">Tharuka</td>
+                    <td id="email_row1">tsandaruvan@gmail.com</td>
+                    <td id="address_row1">No.23,Galle rd,Matara,Sri lanka</td>
+                    <td id="bday_row1">1999-05-21</td>
+                    <td id="pno_row1">+94 774920005</td>
+                    <td id="course_row1">Programming Of Java</td>
+                    <td>
+                        <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                        <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="new_fname"></td>
+                    <td><input type="text" id="new_lname"></td>
+                    <td><input type="text" id="new_email"></td>
+                    <td><input type="text" id="new_address"></td>
+                    <td><input type="date" id="new_bday"></td>
+                    <td><input type="text" id="new_pno"></td>
+                    <td><input type="text" id="new_course"></td>
+                    <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

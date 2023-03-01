@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function validateForm() {
+            let a = document.forms["myForm"]["first_name"].value;
+                if (a == "") {
+                    alert("First name can't be empty");
+                return false;
+                }
+            let b = document.forms["myForm"]["last_name"].value;
+                if (b == "") {
+                    alert("Last name can't be empty");
+                return false;
+                }
+            let c = document.forms["myForm"]["email"].value;
+                if (c == "") {
+                    alert("Email can't be empty");
+                return false;
+                }
+            let d = document.forms["myForm"]["address"].value;
+                if (d == "") {
+                    alert("Address can't be empty");
+                return false;
+                }   
+            let e = document.forms["myForm"]["phone"].value;
+                if (e == "") {
+                    alert("Phone Number can't be empty");
+                return false;
+                }        
+
+            }            
+        </script>
+                  
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+        <title> Apply Now</title>
+        
+    </head>
+    <body>
+        <div class="row">
+            <div class="regform">
+                <h1>Registration Form | ABC Learning Centre</h1>
+            </div>
+            <div class="main">
+                <form name="myForm" onsubmit="return validateForm()" method="post">
+                    <div id="name">  
+                        <h2 class="name"> Name</h2>
+                        <input id="f_name" class="firstname" type="text" name="first_name"><br>
+                        <label class="firstlabel"> First Name</label>
+                        <input id="l_name" class="lastname" type="text" name="last_name"><br>
+                        <label class="lastlabel">Last Name</label >
+                    </div>
+                    <br>
+                    <h2 class="name01"> Email</h2>
+                    <input id="e_mail" class="email" type="text" name="email"><br>
+
+                    <label class="birthday">Birthday</label>
+                    <input class="bday" type="date" id="birthday" name="birthday"> <br>
+                    <input id="address" class="adrs" type="text" name="Address"><br>
+                    <label class="adrslabel"> Address</label>
+
+                    
+                    <input id="no" class="number" type="text" name="phone">
+                    <label class="phone-number">Phone Number</label>
+                    
+                      <br> <br><br><br><br>            
+                    <h2 id="courses">Select your Coursess</h2>
+                    <input type="checkbox" id="check01" name="course01" value="projava">
+                    <label id="course01" for="course01">Programming of Java</label><br>
+                    <input type="checkbox" id="check02" name="course022" value="pronet">
+                    <label id="course02" for="course02">Programming of .NET</label><br>
+                    <input id="clear" type="reset" value="Clear">
+                    
+                    <a href="Home.html"><button id="btn04" type="button" ><h3>Go Home</h3></button></a>
+                
+                
+                   </h2></a>
+                  
+                    <br><br><br>
+                      
+                   <div class="container">
+                        <div class="row">
+                            <a data-toggle="modal" href="#ignismyModal"><h2><input id="sbmt" type="submit"  value="Submit"></h2></a>
+                            <div class="modal fade" id="ignismyModal" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button>
+                                         </div>
+                                        
+                                        <div class="modal-body">
+                                           
+                                            <div class="thank-you-pop">
+                                                <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+                                                <h1>Thank You!</h1>
+                                                <p>Your submission is received and we will contact you soon</p>
+                                                <h3 class="cupon-pop">Your Id: <span>12345</span></h3>
+                                                
+                                             </div>
+                                             
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>
+ 

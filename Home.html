@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <Title>ABC Learning Centre</Title>
+    <head>
+        <script src="https://kit.fontawesome.com/245b1dabe8.js" crossorigin="anonymous"></script>
+        <link rel="scrpiptsheet" href="script.js">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  
+      
+    </head>
+    <body>
+        <Section class="header">
+            <div class="row">
+                <img class="mainlogo" src="main logo.png" alt="">
+                <h1 class="centre">ABC Learning Centre</h1>
+                <h1 style="text-align: right;" class="call"><a href="Contact Us.html">Contact Now</a></h1>
+                <img class="callnow" src="call now logo.png" alt="">
+            </div>
+            <br><br>
+            <div class="topnav">
+                <nav>
+                    <menu>
+                        <menuitem><a href="Home.html">Home</a></menuitem>
+                        <menuitem id="demo1">
+                          <a>Courses</a>
+                        
+                          <menu>
+                            <menuitem><a href="Projava.html">Progrmming Of Java</a></menuitem>
+                            <menuitem><a href="ProNET.html">Programming of .NET</a></menuitem>
+                          </menu>
+                        </menuitem>
+                        <menuitem id="demo1">
+                        <a>Courses Shedule</a>
+                        
+                        <menu>
+                          <menuitem><a href="SheduleJava.html">Progrmming Of Java</a></menuitem>
+                          <menuitem><a href="SheduleNET.html">Programming of .NET</a></menuitem>
+                        </menu>
+                        </menuitem>  
+                        <menuitem><a href="About Us.html">About Us</a></menuitem>
+                        <menuitem><a href="Contact Us.html">Contact Us</a></menuitem>
+                        <menuitem><a href="Sitemap.html">Sitemap</a></menuitem>
+                        <menuitem><a href="Privacy Policy.html">Privacy Policy</a></menuitem>
+                        <menuitem><a href="reggister.html">Register</a></menuitem>  
+                        
+                    </menu>    
+                </nav>
+                
+            </div>
+        </Section>
+        <div class="row">
+            <br>  <br>  <br>  <br>  <br>  <br>  <br>  
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="school-building-10240906.jpg" width="1000px" height="600px">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="istockphoto-1307457391-170667a.jpg" width="1000px" height="600px">
+            
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="wp9697503.webp" width="1000px" height="600px">
+                 
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+        </div>
+        <div class="row">
+            <h1 class="nowopen">Registration Now Open!</h1> 
+        </div>
+        <div class="row">
+          <div class="btn"><a href="reggister.html"><h>Apply Now</h1> </a></div>
+        </div>
+        <div class="row">
+            <h1 class="heading" > Welcome To ABC </h1>
+        </div>
+        <div class="row">
+            <p class="text"> We are abc,ABC is now a member of<br> the Association of Commonwealth Universities (UK).<br> This opens new opportunities for graduates of ABC and we look forward to working with<br> the ACU for the betterment of higher education in Sri Lanka.<br>We are proud to be listed as a leading and formidable<br> awarding institute authorised and approved by the University Grants Commission (UGC) under the Universities Act,<br> and the International Association of Universities (IAU). Furthermore,<br> not only we are the first Sri Lankan institute<br> to be accredited by the Institute of Engineering & Technology(IET.), UK, <br>our IT degrees are also in turn accredited by the Engineering Council, UK.</p>
+        </div>
+
+        <br><br>
+
+        <div class=box01>
+            <div class="row" >
+                <h1 class="learnmore">Largest higher<br>Education Network<br> in Sri lanka<br><a href="About us.html">learn more</a></h1>
+                <br><br><br><br><br><br>
+                <img src="college logo.png"alt="" class="college"></figure>
+            </div>
+        </div>
+       
+
+        <div class="row">
+            <h1 class="why"><B>Why should you Join Us</B></h1>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="row">
+            <div class="joinus">
+                <ul><strong>
+                    <li><p>Lower tuition costs.</p></li>
+                    <li><p>Greater flexibility.</li>
+                    <li><p>Opportunity to earn professional certificates.</p></li>
+                    <li><p>Large University.</li>
+                    <li><p>Some of the typical benefits of a large university are.</p></li>
+                    <li><p>A large, diverse student body.</p></li>
+                    <li><p>More choices of majors and specializations.</p></li>
+                    <li><p>More networking opportunities to help land internships and jobs.</p></li>
+                    <li><p>Small Liberal Arts College.</p></li></strong>
+                 </ul>
+            </div>
+        </div>
+        <br> <br>
+
+        <div class="row"> 
+           
+                <div>
+                    <span><h1 class="strength">Our Strength</h1></span>
+                    <br> <br><br>
+                    <figure><img src="strngth logo.png" alt="" class="strengthpic"></figure>
+                   
+                </div>
+        </div>
+        <br> <br><br> <br><br> <br><br> <br><br> <br>
+        
+          <footer>
+            <div class="footer">
+              <a href="www.Facebook.com"><img src="facebook.png" alt="" class="fb" height="40px" width="40px"></a>
+              <a href="www.Telegram.com"><img src="Telegram-i-removebg-preview.png" alt="" class="tele" height="40px" width="60px"></a>
+              <a href="www.Twitter.com"><img src="twitter_logo-removebg-preview.png" alt="" class="twit" height="40px" width="45px"></a>
+              <a href="www.whatsapp.com"><img src="whatsapp 01.jpg" alt="" class="wp" height="40px" width="40px"></a>
+              <br>
+              <p>Copyright 2020 © ABC. All Rights Reserved. Concept designed and developed by Jisc</p>
+            </div>  
+            </footer>
+
+    </body>
+</html>

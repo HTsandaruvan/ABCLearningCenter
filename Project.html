@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+    <Title>ABC Learning Centre</Title>
+    <head>
+        <script src="https://kit.fontawesome.com/245b1dabe8.js" crossorigin="anonymous"></script>
+        <link rel="scrpiptsheet" href="script.js">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $(".topnav a").click(function(){
+                $(this).tab('show');
+              });
+            });
+        </script>
+  
+      
+    </head>
+    <body>
+        <Section class="header">
+            <div class="row">
+                <img class="mainlogo" src="main logo.png" alt="">
+                <h1 class="centre">ABC Learning Centre</h1>
+                <h1 style="text-align: right;" class="call"><a href="">Contact Now</a></h1>
+                <img class="callnow" src="call now logo.png" alt="">
+            </div>
+            <br><br>
+            <div class="topnav">
+                <nav>
+                    <menu>
+                        <menuitem><a href="#home">Home</a></menuitem>
+                        <menuitem id="demo1">
+                          <a>Courses</a>
+                        
+                          <menu>
+                            <menuitem><a href="#projava">Progrmming Of Java</a></menuitem>
+                            <menuitem><a href="#proNET">Programming of .NET</a></menuitem>
+                          </menu>
+                        </menuitem>
+                        <menuitem id="demo1">
+                        <a>Courses Shedule</a>
+                        
+                        <menu>
+                          <menuitem><a href="#shedulejava">Progrmming Of Java</a></menuitem>
+                          <menuitem><a href="#sheduleNET">Programming of .NET</a></menuitem>
+                        </menu>
+                        </menuitem>  
+                        <menuitem><a href="#aboutus">About Us</a></menuitem>
+                        <menuitem><a href="#contactus">Contact Us</a></menuitem>
+                        <menuitem><a href="#sitemap">Sitemap</a></menuitem>
+                        <menuitem><a href="#privacypolicy">Privacy Policy</a></menuitem>
+                        <menuitem><a href="reggister.html">Register</a></menuitem>  
+                        
+                    </menu>    
+                </nav>
+                
+            </div>
+        </Section>
+        <section class="content">
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <div class="row">
+                        <br>  <br>  <br>  <br>  <br>  <br>  <br>  
+                        <div class="slideshow-container">
+            
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 3</div>
+                              <img src="school-building-10240906.jpg" width="1000px" height="600px">
+                              
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 3</div>
+                              <img src="istockphoto-1307457391-170667a.jpg" width="1000px" height="600px">
+                        
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">3 / 3</div>
+                              <img src="wp9697503.webp" width="1000px" height="600px">
+                             
+                            </div>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                            </div>
+                            <script>
+                                let slideIndex = 0;
+                                showSlides();
+                                
+                                function showSlides() {
+                                  let i;
+                                  let slides = document.getElementsByClassName("mySlides");
+                                  let dots = document.getElementsByClassName("dot");
+                                  for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";  
+                                  }
+                                  slideIndex++;
+                                  if (slideIndex > slides.length) {slideIndex = 1}    
+                                  for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                  }
+                                  slides[slideIndex-1].style.display = "block";  
+                                  dots[slideIndex-1].className += " active";
+                                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                                }
+                                </script>
+                    </div>
+                    <div class="row">
+                        <h1 class="nowopen">Registration Now Open!</h1> 
+                    </div>
+                    <div class="row">
+                      <div class="btn"><a href="reggister.html">Apply Now </a></div>
+                    </div>
+                    <div class="row">
+                        <h1 class="heading" > Welcome To ABC </h1>
+                    </div>
+                    <div class="row">
+                        <p class="text"> We are abc,ABC is now a member of<br> the Association of Commonwealth Universities (UK).<br> This opens new opportunities for graduates of ABC and we look forward to working with<br> the ACU for the betterment of higher education in Sri Lanka.<br>We are proud to be listed as a leading and formidable<br> awarding institute authorised and approved by the University Grants Commission (UGC) under the Universities Act,<br> and the International Association of Universities (IAU). Furthermore,<br> not only we are the first Sri Lankan institute<br> to be accredited by the Institute of Engineering & Technology(IET.), UK, <br>our IT degrees are also in turn accredited by the Engineering Council, UK.</p>
+                    </div>
+
+                    <br><br>
+
+                    <div class=box01>
+                        <div class="row" >
+                            <h1 class="learnmore">Largest higher<br>Education Network<br> in Sri lanka<br><a href="About us.html">learn more</a></h1>
+                            <br><br><br><br><br><br>
+                            <img src="college logo.png"alt="" class="college"></figure>
+                        </div>
+                    </div>
+                   
+
+                    <div class="row">
+                        <h1 class="why">Why should you Join Us</h1>
+                    </div>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="row">
+                        <div class="joinus">
+                            <ul><strong>
+                                <li><p>Lower tuition costs.</p></li>
+                                <li><p>Greater flexibility.</li>
+                                <li><p>Opportunity to earn professional certificates.</p></li>
+                                <li><p>Large University.</li>
+                                <li><p>Some of the typical benefits of a large university are.</p></li>
+                                <li><p>A large, diverse student body.</p></li>
+                                <li><p>More choices of majors and specializations.</p></li>
+                                <li><p>More networking opportunities to help land internships and jobs.</p></li>
+                                <li><p>Small Liberal Arts College.</p></li></strong>
+                             </ul>
+                        </div>
+                    </div>
+                    <br> <br>
+
+                    <div class="row"> 
+                       
+                            <div>
+                                <span><h1 class="strength">Our Strength</h1></span>
+                                <br> <br><br>
+                                <figure><img src="strngth logo.png" alt="" class="strengthpic"></figure>
+                               
+                            </div>
+                    </div>
+                </div>
+                <div id="projava" class="tab-pane fade in ">
+                    <div class="row">
+                        <h1 class="welpro"> <center>Welcome To Programming</center></h1>
+                    </div>
+                    <div class="row" style="color:#FFF">
+                        <div class="column02">
+                          <h2 class="pjava" style="color:#FFF"> <center><strong> Programming Of java </strong> </center></h2>
+                          
+                          <P><Center>Java is one of the most popular programming languages out there. Released in 1995 and still widely used today, Java has many applications, including software development, mobile applications, and large systems development. Knowing Java opens a lot of possibilities for you as a developer.</Center></P>
+                          <h2><center>Programme Overview</center></h2>
+                          <P class="proover">
+                            <ul>
+                              <li><p>Java Data Types & Operators</p></li>
+                              <li><p>Decision Constructs & Loop Constructs</p></li>
+                              <li><p>Creating and Using Arrays</p></li>
+                              <li><p>Object-Oriented Design Principles</p></li>
+                              <li><p>Working with Selected classes from the Java API</p></li>
+                              <li><p>Java Class Design</p></li>
+                              <li><p>String Processing</li>
+                              <li><p>Exceptions and Assertions</p></li>
+                              <li><p>Generics and Collections</p></li>
+                              <li><p>Java I/O, Java File I/O</p></li>
+                              <li><p>Building Database Applications with JDBC</p></li>
+                              <li><p>Internationalization & Localization</p></li>
+                              <li><p>Concurrency</p></li>
+                            </ul> 
+                          </P>
+                          <div class="row">
+                            <a href="reggister.html"><div class="btn02">Apply Now </div></a>
+                          </div>
+                        </div>
+                        <div class="column02">
+                            <h1 class="criout"><center>Curriculum Outline</center></h1>
+                            <div>
+                              <table style="font-size: 20px; right: 0px;">
+                                <tr>
+                                  <td>1. Course Introduction</td>
+                                </tr>
+                                <tr>
+                                  <td>2. Getting Started with Java</td>
+                                </tr>
+                                <tr>
+                                  <td>3. Eclipse</td>
+                                </tr>
+                                <tr>
+                                  <td>4. Datatypes and Variables1</td>
+                                </tr>
+                                <tr>
+                                  <td>5. Operators and Expressions
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>6. Control Flow</td>
+                                </tr>
+                                <tr>
+                                  <td>8. Object-Oriented Programming</td>
+                                </tr>
+                                <tr>
+                                  <td>10. Using Java Objects</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    11. Packages</td>
+                                </tr>
+                                
+                              </table>
+                              <br>
+                              <img src="Java-1-Introduction.webp" alt="">
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="proNET" class="tab-pane fade in ">
+                    <div class="row">
+                        <h1 class="welpro"><center> Welcome To Programming </center></h1>
+                    </div>
+                    <div class="row">
+                        <div class="column02">
+                          <h2 class="pjava"> <center><strong> Programming Of .NET </strong></center></h2>
+                          <br>
+                          <P class="pronet"><center>his Introduction to .NET Programming training course provides hands-on experience creating software for Microsoft's .NET (Windows platform) using the Visual Studio development environment. Starting with the most fundamental elements of computer programming, the training evolves to leverage development techniques sufficient to produce a complete web application including the user interface, business logic and data access layers. You learn how to write code using Visual Basic (VB) and C#; create ASP.NET Web applications and process Web forms and build SQL Server databases and access them using ADO.NET.
+            
+                            Participants have the choice of using either C# (C Sharp) or VB (Visual Basic) – the Microsoft .NET core languages. Techniques presented include design, code generation, testing and debugging including use of the ASP.NET (Active Server Pages) the SQL Server database.</center></P>
+                          <h2><center> Programme Overview </center></h2>
+            
+                          <P class="proover"><Center>This .NET certification online course is a comprehensive introduction to the .NET space and .NET coding using C#. This course lays the foundation for the major aspects of .NET development, including the Visual Studio Environment, data connections, the C# language, and WinForms and WebForms projects.</Center></P>
+                          <div class="row">
+                            <a href="reggister.html"><div class="btn02">Apply Now </div></a>
+                          </div>
+                        </div>
+                        <div class="column02">
+                            <h1 class="criout"><center>Curriculum Outline</center></h1>
+                            <div>
+                              <table style="font-size: 20px; right: 0px;">
+                                <tr>
+                                  <td>1.Learn By Doing Code Live with Mentor.</td>
+                                </tr>
+                                <tr>
+                                  <td>2.Learn .NET and .NET Core.</td>
+                                </tr>
+                                <tr>
+                                  <td>3.Learn Programming using C#.</td>
+                                </tr>
+                                <tr>
+                                  <td>4. Advanced C# Concepts.</td>
+                                </tr>
+                                <tr>
+                                  <td>5. Design Database Using SQL Server.</td>
+                                </tr>
+                                <tr>
+                                  <td>6.Learn from Microsoft Certified Trainer and MVP.</td>
+                                </tr>
+                                <tr>
+                                  <td>8.Build real-world Projects.</td>
+                                </tr>
+                                <tr>
+                                  <td>10.Access to Learning Platform for 1Yr.</td>
+                                </tr>
+                              </table>
+                              <br>
+                              <img src="https___d3f1iyfxxz8i1e.cloudfront.net_courses_course_image_1399956b4708.avif" alt="">
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="shedulejava" class="tab-pane fade in ">
+                    <div class="row">
+                        <div class="column02">
+                          <h2 class="pjava"> <center><strong> The Schedule Of Programming Of Java </strong> </center></h2>
+                          <br>
+                          <div class="row">
+                              <table>
+                                  <tr>
+                                      <th>Course fee</th>
+                                      <th>Duration</th>
+                                      <th>Start Date</th>
+                                      <th>Time</th>
+                                      <th>Lecturers</th>
+                                      <th>No of Period</th>
+                                  </tr>
+                                  <tr>
+                                      <td>USD 200</td>
+                                      <td>2 Years</td>
+                                      <td>02-05-2022</td>
+                                      <td>8.00 am</td>
+                                      <td>Prof.Kannangara<br>
+                                          Prof.Sujith<br>
+                                          prof.Dissanayake
+                                      </td>
+                                      <td>30</td>
+            
+                                  </tr>
+                              </table>
+            
+                          </div>
+                                 
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+            
+                          <br>
+                          <h2 class="hurry">Hurry up And</h2>
+
+                          <a href="reggister.html"><div class="btn03">Apply Now </div></a>
+                        </div>
+                        <div class="column02">
+                          <center><img src="" ><img src="download (1).jpg"  width="600px" height="400px"></center>
+                        </div>
+                    </div>
+                </div>
+                <div id="sheduleNET" class="tab-pane fade in ">
+                    <div class="row">
+                        <div class="column02">
+                          <h2 class="pjava"> <center><strong> The Schedule Of Programming Of .NET </strong> </center></h2>
+                          <br>
+                          <div class="row">
+                              <table>
+                                  <tr>
+                                      <th>Course fee</th>
+                                      <th>Duration</th>
+                                      <th>Start Date</th>
+                                      <th>Time</th>
+                                      <th>Lecturers</th>
+                                      <th>No of Period</th>
+                                  </tr>
+                                  <tr>
+                                      <td>USD 200</td>
+                                      <td>2 Years</td>
+                                      <td>1-05-2022</td>
+                                      <td>8.00 am</td>
+                                      <td>Prof.Kannangara<br>
+                                          Prof.Sujith<br>
+                                          prof.Dissanayake
+                                      </td>
+                                      <td>30</td>
+            
+                                  </tr>
+                              </table>
+            
+                          </div>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+            
+                          <br>
+            
+                          <h2 class="hurry">Hurry up And</h2>
+                          <a href="reggister.html"><div class="btn03">Apply Now </div></a>
+                        </div>
+                        <div class="column02">
+                          <center><img src="" ><img src="Which-Software-is-used-for-.NET-Programming-1280x720.jpg" width="600" height="400" ></center>
+                        </div>
+                    </div>
+                </div>
+                <div id="aboutus" class="tab-pane fade ">
+                  <div class="row">
+                    <div class="column02">
+                      <h2> <center> About ABC</center></h2>
+                    
+                      <p class="about" ><center>Java programming is object-oriented, class-based and platform-independent in nature,
+                           being one of the most popular programming languages today.<br> 
+                           It is famously used in the development of web applications, mobile applications,<br> 
+                           embedded systems, and the list goes on. The growing demand for better technology calls for the need for skillful programmers,<br> 
+                           a lot of which are required to be well versed with Programming... </center>
+                      </p>
+                      <br>
+                      <br>
+                      <br>
+            
+                      <h2><center>What We DO</center></h2>
+                      <p><center>Our flagship product, CLaaS®, which stand for Competency Learning as a Service, <br>is a peer2peer learning platform delivering mass customised learning for students,<br> professionals and enterprises over the cloud, on-demand.
+            
+                        Leveraging on advanced education technology <br> innovative work-integrated learning pedagogy, CLaaS® is aligned around <br> competency-based curriculum to deliver specific skills<br> and competencies required by employers and the industry.</center>
+                   </div>
+                   <div class="column02">
+                      <h2 ><center>Our vision</center></h2>
+                 
+                      <p><center>To emerge as the most sought-after education and training partner in <br>the region by making a meaningful<br> contribution towards building a knowledgeable society.</center></p>
+                      <br>
+                      <br>
+                      <br>
+                      <h2><center>Our Mission</center></h2>
+                      <p><center>Leverage our affiliations and partnerships to empower the youth to shape<br> their lives and create futures for themselves <br>by providing recognised, affordable and up-to-date knowledge.</center></p> 
+                      <br>
+                      <br>
+                      <br>
+                      <h2><center>Facilities</center></h2>
+                       <center>
+                         <p>
+                          library<br>
+                          Student Services<br>
+                          Sport club<br>
+                          Gym
+                        </p>
+                        </center>
+                    </div>
+                  </div>
+                </div>
+                <div id="contactus" class="tab-pane fade ">
+                  <div class="row">
+                    <h1 style="font-family: 'Times New Roman', Times, serif; left: 20px;">t Islandwide Networks</h1>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.8076689666814!2d80.59306381458774!3d6.02112129563919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae147aee657593b%3A0xc5867f39c72a840e!2sYatiyana%20Maha%20Vidyalaya!5e0!3m2!1sen!2slk!4v1650538590240!5m2!1sen!2slk" width="1520px" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+                  </div>
+                  <div class="row" style="color:  rgb(145, 83, 83);;">
+                    <div class="column">
+                      <center><h1>Telephone No</h1>
+                      <p>+94 11 754 4801</p>
+                      <p>+94 77 492 0069</p>
+                      
+                      <h1>Address</h1>
+                      <p>No 45<br> NEW KANDY ROAD,<br>MALABE.</p>
+            
+                      <h1>E-mail</h1>
+                      <p>abc@gmail.com</p>
+            
+                      <h1>Fax</h1>
+                      <P>+94 11 241 3901</P></center>
+                    </div>
+                   <div class="column">
+                      <h2 ><center>Matara</center></h2>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>No 45,Rahula Junction,Matara.</center></p>
+            
+                      <h2 ><center>Galle</center></h2>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>No 45,Rahula Junction,Matara.</center></p>
+            
+                      <h2 ><center>Hammbanthota</center></h2>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>No 45,Rahula Junction,Matara.</center></p>
+                   </div>
+                   <div class="column">
+                     <h2 ><center>kalutara</center></h2>
+                     <p><center>+94 11 565 1212</center></p>
+                     <p><center>+94 11 565 1212</center></p>
+                     <p><center>No 45,Rahula Junction,Matara.</center></p>
+                
+                 
+                      <h2 ><center>Gampaha</center></h2>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>No 45,Rahula Junction,Matara.</center></p>
+                   
+                    
+                      <h2 ><center>Kurunegala</center></h2>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>No 45,Rahula Junction,Matara.</center></p>
+                    </div>
+                    <div class="column"></div>
+                      <h2 ><center>Puttalama</center></h2>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>No 45,Rahula Junction,Matara.</center></p>
+            
+                      <h2 ><center>Anuradapura</center></h2>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>No 45,Rahula Junction,Matara.</center></p>
+            
+                      <h2 ><center>Kandy</center></h2>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>+94 11 565 1212</center></p>
+                      <p><center>No 45,Rahula Junction,Matara.</center></p>
+                    </div>
+                </div>
+                <div id="sitemap" class="tab-pane fade">
+                  <div class="stmp">
+                     <ul>
+                         <li><a href="#home"><p>Home</p></a></li>
+                         <ul>
+                             <li><a href="#home"><p>Welcome to ABC</p></a></li>
+                             <li><a href="#home"><p>Apply Now</p></a></li>
+                             <li><a href="#home"><p>Why should you join us</p></a></li>
+                             <li><a href="#home"><p>Learn more</p></a></li>
+                             <li><a href="#home"><p>Our strength</p></a></li>
+                             <li><a href="#home"><p>News</p></a></li>
+                         </ul>
+                     </ul>
+                     <ul>
+                         <li><a href=""><p>About Us</p></a></li>
+                             <ul>
+                               <li><a href="#aboutus"><p>About ABC</p></a> </li>
+                               <li><a href="#aboutus"><p>Our Mission</p></a> </li>
+                               <li><a href="#aboutus"><p>Our Vision</p></a> </li>
+                               <li><a href="#aboutus"><p>What we Do</p></a> </li>
+                               <li><a href="#aboutus"><p>Facilities</p></a> </li>
+                             </ul>
+                     </ul>
+                     <ul>
+                         <li><a href="#Contactus"><p>Contact Us</p></a></li>
+                             <ul>
+                               <li><a href="#Contactus"><p>Address</p></a></li>
+                               <li><a href="#Contactus"><p>Telephone No</p></a></li>
+                               <li><a href="#Contactus"><p>Fax</p></a></li>
+                               <li><a href="#Contactus"><p>Locations Map</p></a></li>
+                               <li><a href="#Contactus"><p>our branches</p></a></li>
+                             </ul>
+                     </ul>
+                       
+                             <ul>
+                               <li><a href="##projava"><p>progrmming of java</p></a></li>
+                               <li><a href="##proNET"><p>progtramming of .net</p></a></li>
+                             </ul>
+                   
+                      
+                       <ul>
+                         <li><a href="#shedulejava"><p>shedule of Java</p></a></li>
+                         <li><a href="#sheduleNET"><p>shedule of .NET</p></a></li>
+                       </ul>
+                     <ul>
+                         <li><a href="Privacy policy.html"><p></p>Privacy Policy</p></a></li>
+                             <ul>
+                               <li><a href="Privacy policy.html"><p></p>Introductios</p></a></li>
+                               <li><a href="Privacy policy.html"><p></p>Who will process my personal Information</p></a></li>
+                             </ul>
+                       </ul>   
+                   </div>
+                 </div>
+                 <div id="privacypolicy" class="tab-pane fade ">
+          
+                  <div class="row" style="color: rgb(145, 83, 83);">
+                       <div class="privacy">
+                           <h1>Introductions</h1>
+                           <p>This  page explains how and why we collect, and use, your personal information when you visit ABC learning Centre website (www.abc.edu.lk) or our Social<br> Media Pages including our official Facebook page (www.facebook.com/ABC learning centre).</p> 
+                           <br>
+                           <br>
+                           <br>
+                           <br>
+                           <h1>Who will process my personal information?</h1>
+                           <p>When you view or use www.ABC.edu.lk, or any website within the same domain (ABC.edu.lk) that has referred you to this privacy notice, ABC learning centre <br>
+                                 (‘we’, ‘us’ and ‘the centre’) is the data controller. In case of Facebook Page, ABC learning centre is the joint data controller.</p>
+                       </div> 
+                  </div>
+               </div>  
+               <div id="register" class="tab-pane fade ">
+                <div class="row">
+                  <div class="regform">
+                      <h1>Registration Form | ABC Learning Centre</h1>
+                  </div>
+                  <div class="main">
+                      <form>
+                          <div id="name">
+                              <h2 class="name"> Name</h2>
+                              <input class="firstname" type="text" name="first_name"><br>
+                              <label class="firstlabel"> First Name</label>
+                              <input class="lastname" type="text" name="last_name"><br>
+                              <label class="lastlabel">Last Name</label >
+                          </div>
+                          <br>
+                          <h2 class="name01"> Email</h2>
+                          <input class="email" type="text" name="email"><br>
+      
+                          <label class="birthday">Birthday</label>
+                          <input class="bday" type="date" id="birthday" name="birthday"> <br>
+                          <input class="adrs" type="text" name="Address"><br>
+                          <label class="adrslabel"> Address:</label>
+      
+                          
+                          <input class="number" type="text" name="phone">
+                          <label class="phone-number">Phone Number</label>
+                          
+                            <br> <br><br><br><br>            
+                          <h2 id="courses">Select your Coursess</h2>
+                          <input type="checkbox" id="check01" name="course01" value="projava">
+                          <label id="course01" for="course01">Programming of Java</label><br>
+                          <input type="checkbox" id="check02" name="course022" value="pronet">
+                          <label id="course02" for="course02">Programming of Java</label><br>
+      
+                          <a href="thank.html"><input id="sbmt" type="submit" value="Submit"></a>
+                          <br><br><br><br><br>
+                            
+                       
+      
+                      </form>
+                  </div>
+              </div>
+               </div>    
+            </div>
+        </section>
+        <br> <br><br> <br><br> <br><br> <br><br> <br><br><br><br><br><br><br><br><br><br>
+      
+      
+         
+          <footer>
+            <div class="footer">
+              <a href="www.Facebook.com"><img src="facebook.png" alt="" class="fb" height="40px" width="40px"></a>
+              <a href="www.Telegram.com"><img src="Telegram-i-removebg-preview.png" alt="" class="tele" height="40px" width="60px"></a>
+              <a href="www.Twitter.com"><img src="twitter_logo-removebg-preview.png" alt="" class="twit" height="40px" width="45px"></a>
+              <a href="www.whatsapp.com"><img src="whatsapp 01.jpg" alt="" class="wp" height="40px" width="40px"></a>
+              <br>
+              <p>Copyright 2020 © ABC. All Rights Reserved. Concept designed and developed by Jisc</p>
+            </div>  
+            </footer>
+
+    </body>
+</html>
